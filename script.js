@@ -23,11 +23,11 @@ const typingText = document.querySelector(".typing-text");
 
 const words = [
 
-  "Creative Developer",
-  "Neo UI Designer",
-  "Animation Specialist",
-  "Frontend Engineer",
-  "Futuristic Creator"
+  "Science and Tech Lover",
+  "Gamer",
+  "Learner",
+  "A Website owner",
+  "Passionate Boy"
 
 ];
 
