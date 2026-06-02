@@ -24,7 +24,7 @@ const typingText = document.querySelector(".typing-text");
 const words = [
 
   "Science and Tech Lover",
-  "Gamer",
+  "Introvert",
   "Learner",
   "A Website owner",
   "Passionate Boy"
