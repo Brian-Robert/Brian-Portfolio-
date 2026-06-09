@@ -12,7 +12,17 @@ if(hamburger){
   hamburger.addEventListener("click", () => {
 
     navMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
 
+  });
+
+  // Close menu when a link is clicked
+  const navLinks = navMenu.querySelectorAll("a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      hamburger.classList.remove("active");
+    });
   });
 
 }
@@ -24,10 +34,10 @@ const typingText = document.querySelector(".typing-text");
 const words = [
 
   "Science and Tech Lover",
-  "Introvert",
+  "Problem Solver",
+  "Web Developer",
   "Learner",
-  "A Website owner",
-  "Passionate Boy"
+  "Passionate Developer"
 
 ];
 

@@ -397,6 +397,9 @@ BUTTONS
   0 0 25px var(--pink),
   0 0 50px rgba(255,0,255,.4);
 
+  display:inline-block;
+  cursor:pointer;
+
 }
 
 .btn:hover{
@@ -491,6 +494,7 @@ SECTIONS
 .page-section{
 
   padding:120px 10%;
+  margin-top:80px;
 
 }
 
@@ -549,7 +553,7 @@ CARDS
 
   position:relative;
 
-  overflow:hidden;
+  overflow:visible;
 
   padding:45px;
 
@@ -653,7 +657,43 @@ CARDS
   line-height:1.9;
 
   color:#d6d6d6;
+  white-space:normal;
+  word-wrap:break-word;
+  overflow-wrap:break-word;
+  hyphens:auto;
 
+}
+
+.contact-box{
+  text-align:center;
+  max-width:600px;
+  margin:0 auto;
+}
+
+.contact-box i{
+  font-size:4rem;
+  margin-bottom:30px;
+  background:linear-gradient(90deg,var(--cyan),var(--pink));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.contact-box h2{
+  font-size:2rem;
+  margin-bottom:20px;
+  color:var(--cyan);
+}
+
+.contact-box p{
+  margin-bottom:30px;
+  font-size:1.1rem;
+}
+
+.contact-box .btn{
+  margin-top:20px;
+  display:inline-block;
+  position:relative;
+  z-index:10;
 }
 
 /* ======================
@@ -732,6 +772,7 @@ RESPONSIVE
     padding:50px 30px;
 
     transition:.5s;
+    z-index:998;
 
   }
 
@@ -761,7 +802,20 @@ RESPONSIVE
     background:white;
 
     border-radius:20px;
+    transition:.3s;
 
+  }
+
+  .hamburger.active span:nth-child(1){
+    transform:rotate(45deg) translate(10px, 10px);
+  }
+
+  .hamburger.active span:nth-child(2){
+    opacity:0;
+  }
+
+  .hamburger.active span:nth-child(3){
+    transform:rotate(-45deg) translate(7px, -7px);
   }
 
   .hero-buttons{
@@ -772,4 +826,8 @@ RESPONSIVE
 
   }
 
-             }
+  .btn{
+    width:100%;
+  }
+
+}

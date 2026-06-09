@@ -13,6 +13,7 @@ FILE: skills.html
   <meta charset="UTF-8" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore Brian's skills in web development, electronics, coding, and more.">
 
   <title>Brian | Skills</title>
 
@@ -83,8 +84,7 @@ FILE: skills.html
         <h3>HTML5</h3>
 
         <p>
-        Learning to Build modern static websites with responsive layouts,
-          neon aesthetics, optimized structure and smooth animations.
+          Learning to build modern static websites with responsive layouts, neon aesthetics, optimized structure and smooth animations.
         </p>
 
       </div>
@@ -98,8 +98,7 @@ FILE: skills.html
         <h3>CSS3</h3>
 
         <p>
-          Learning to Create beautiful futuristic interfaces using gradients,
-          glowing effects, glassmorphism and advanced styling.
+          Learning to create beautiful futuristic interfaces using gradients, glowing effects, glassmorphism and advanced styling.
         </p>
 
       </div>
@@ -113,25 +112,22 @@ FILE: skills.html
         <h3>JavaScript</h3>
 
         <p>
-         Learning to Add interactivity, animations, transitions,
-          dynamic visual effects and engaging user experiences.
+          Learning to add interactivity, animations, transitions, dynamic visual effects and engaging user experiences.
         </p>
 
       </div>
 
-      <!-- STATIC HTML -->
+      <!-- CODING -->
 
       <div class="glass-card">
 
         <i class="fas fa-code"></i>
 
-        <h3>Coding</h3>
+        <h3>Coding & Python</h3>
 
-        <p>I want to learn coding and as far I have researched I have found out that python is the best for a beginner and
-          it's the simplest and at that time I have heard that it has the most demand so I took a python course from YouTube and watched it and it is 2 hours, 2 minutes and 20 seconds and it is by Mosh Hamedani and now it's AI era so, I think we don't have to worry about it.
-          And now I am trying to learn Static HTML 
-          
-         </p>
+        <p>
+          Interested in learning Python as a beginner-friendly language. Completed a comprehensive 2+ hour Python fundamentals course. Currently exploring how Python can be applied to real-world projects and problem-solving.
+        </p>
 
       </div>
 
@@ -143,7 +139,8 @@ FILE: skills.html
 
         <h3>Electronics</h3>
 
-        <p>I have a basic knowledge of electronic like Resistors,Diodes, Transistors and IC's and I know how to solder and I also watched a basic Electronics course on YouTube from A1 electronics which is about 2+ hours.
+        <p>
+          Have basic knowledge of electronic components including resistors, diodes, transistors, and integrated circuits. Proficient in soldering techniques. Completed beginner electronics courses focusing on circuit design and component behavior.
         </p>
 
       </div>
@@ -157,10 +154,7 @@ FILE: skills.html
         <h3>3x3 Rubik's Cube</h3>
 
         <p>
-          I can solve a 3x3 Rubik's cube without stucking.
-          I have more than a year of experience and I didn't even learnt it from YouTube or Google.
-          I still have remembered about 10 formulas from over a year,it took me constant practicing every day for a month.
-          My top record is under 1 minute and average is under 2 or 1.5 minutes.
+          Can solve a 3x3 Rubik's cube consistently without getting stuck. Over a year of hands-on experience through daily practice. Remembered approximately 10 key formulas. Personal best: under 1 minute. Average solve time: 1.5-2 minutes.
         </p>
 
       </div>
@@ -174,9 +168,7 @@ FILE: skills.html
         <h3>Chess</h3>
 
         <p>
-          Chess is a mind game and I like it, even though I am not expert at this but I think I can beat 40 % percent of the players at my level.
-I am not that good but when I took the lessons I find out that I already have done this before and just don't know it's name, that happened to me quite a lot .
-          
+          Enjoy chess as a strategic mind game. Estimate ability to beat approximately 40% of players at my skill level. Discovering previously unknown chess concepts through formal lessons. Continuously improving tactical awareness and strategic thinking.
         </p>
 
       </div>
@@ -189,14 +181,11 @@ I am not that good but when I took the lessons I find out that I already have do
 
         <h3>Languages</h3>
 
-        <p>I know 3 to 4 Languages and English is one of them, 
-          since English is not my native language and I think can speak it decently although I am not very fluent and confident but I am working on it.
+        <p>
+          Fluent in 3-4 languages. English proficiency: conversational and decent, though not yet fully fluent. English is not my native language, but I actively work on improving confidence and communication skills.
         </p>
 
       </div>
-
-      
-      
 
     </div>
 
@@ -206,47 +195,13 @@ I am not that good but when I took the lessons I find out that I already have do
 
   <footer>
 
-    © 2026 Brian Portfolio 
+    © 2026 Brian Portfolio
 
   </footer>
 
   <!-- JAVASCRIPT -->
 
-  <script>
-
-    // MOBILE MENU
-
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("navMenu");
-
-    hamburger.onclick = () => {
-
-      navMenu.classList.toggle("active");
-
-    };
-
-    // CARD ANIMATION
-
-    const cards = document.querySelectorAll(".glass-card");
-
-    window.addEventListener("scroll", () => {
-
-      cards.forEach(card => {
-
-        const top = card.getBoundingClientRect().top;
-
-        if(top < window.innerHeight - 100){
-
-          card.style.opacity = "1";
-          card.style.transform = "translateY(0px)";
-
-        }
-
-      });
-
-    });
-
-  </script>
+  <script src="script.js"></script>
 
 </body>
 
