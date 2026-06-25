@@ -151,7 +151,19 @@ LOGO
 
   font-weight:900;
 
-  color:var(--cyan);
+  background:
+  linear-gradient(
+  90deg,
+  var(--cyan),
+  var(--pink),
+  var(--purple)
+  );
+
+  background-size:300%;
+
+  -webkit-background-clip:text;
+
+  -webkit-text-fill-color:transparent;
 
   letter-spacing:8px;
 
